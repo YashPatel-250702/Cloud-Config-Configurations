@@ -5,6 +5,9 @@ spring:
   application:
     name: address-info
 
+  config:
+    import: optional:configserver:http://localhost:9999
+
   datasource:
     url: jdbc:postgresql://aws-0-ap-south-1.pooler.supabase.com:5432/postgres
     username: postgres.gmeqjfecykahhgyrukca
@@ -18,3 +21,8 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+okta:
+  oauth2:
+    issuer: https://dev-98542581.okta.com/oauth2/default
+    audience: api://default

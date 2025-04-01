@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: department-info 
+    name: department-info
 
   datasource:
     url: jdbc:postgresql://aws-0-ap-south-1.pooler.supabase.com:5432/postgres
@@ -18,3 +18,8 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+okta:
+  oauth2:
+    issuer: https://dev-98542581.okta.com/oauth2/default
+    audience: api://default
