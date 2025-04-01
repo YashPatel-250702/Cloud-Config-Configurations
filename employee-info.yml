@@ -78,7 +78,4 @@ resilience4j:
         limit-for-period: 3     
         timeout-duration: 0s
 
-okta:
-  oauth2:
-    issuer: https://dev-98542581.okta.com/oauth2/default
-    audience: api://default
+

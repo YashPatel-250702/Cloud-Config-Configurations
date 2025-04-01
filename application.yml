@@ -15,11 +15,11 @@ eureka:
 logging:
   level:
     root: INFO
-    com.example: DEBUG  
+    com.example: DEBUG
   file:
-    name: logs/application.log 
+    name: logs/application.log
   pattern:
-    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n" 
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
 
 management:
   tracing:
@@ -28,3 +28,8 @@ management:
   zipkin:
     tracing:
       endpoint: http://localhost:9411/api/v2/spans
+
+okta:
+  oauth2:
+    issuer: https://dev-98542581.okta.com/oauth2/default
+    audience: api://default
