@@ -4,7 +4,3 @@ server:
 spring:
   application:
     name: address-info
-okta:
-  oauth2:
-    issuer: https://dev-98542581.okta.com/oauth2/default
-    audience: api://default
