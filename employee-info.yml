@@ -6,22 +6,6 @@ spring:
     name: employee-info
   r2dbc:
     url: 
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: https://dev-98542581.okta.com/oauth2/default
-      client:
-        registration:
-          my-client:
-            provider: okta
-            authorization-grant-type: client-credentials
-            scope: Internal
-            client-id: 0oanwp3vluL35pCWE5d7
-            client-secret: kri3JQRqmWSRPtsWCOCth7QczK2YcFEkPJOhooFPAiLM0vqKVJ1_bbu5wJ7itscJ
-        provider:
-          okta:
-            issuer-uri: https://dev-98542581.okta.com/oauth2/default
 
 management:
   health:
