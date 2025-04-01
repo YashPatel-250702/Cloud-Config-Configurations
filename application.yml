@@ -18,25 +18,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-    register-with-eureka: true
-    fetch-registry: true
-  instance:
-    hostname: localhost
-    prefer-ip-address: true
-
-logging:
-  level:
-    root: INFO
-    com.example: DEBUG
-  file:
-    name: logs/application.log
-  pattern:
-    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
 okta:
   oauth2:
     issuer: https://dev-98542581.okta.com/oauth2/default
