@@ -24,6 +24,6 @@ management:
 eureka:
   client:
     service-url:
-      defaultZone: https://microservice-service-registry-qgma.onrender.com/eureka
+      defaultZone: 8761
     register-with-eureka: true
     fetch-registry: true
