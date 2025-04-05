@@ -20,10 +20,3 @@ management:
   tracing:
     sampling:
       probability: 1.0
-
-eureka:
-  client:
-    service-url:
-      defaultZone: 8761
-    register-with-eureka: true
-    fetch-registry: true
